@@ -1,8 +1,19 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 0 0% 98% / 1;
+  --foreground: 215 25% 15% / 1;
+
+  --section-odd: 0 0% 100% / 1;
+  --section-even: 0 0% 98% / 1;
+}
+
+.dark {
+  --background: 210 18% 9% / 1;
+  --foreground: 0 0% 95% / 1;
+
+  --section-odd: 210 18% 9% / 1;
+  --section-even: 210 20% 7% / 1;
 }
 
 @theme inline {
@@ -10,6 +21,106 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeOutZoom {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.95);
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background-image: linear-gradient(to right, #34d399, #16a34a);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .dialogue {
+    transform: translate(-50%, -50%);
+    background-color: hsl(var(--background));
+    pointer-events: none;
+  }
+
+  .skills-btn {
+    color: var(--foreground);
+  }
+  .skills-btn:hover {
+    background-image: linear-gradient(to right, #34d3997e, #3c985e6d);
+  }
+
+  .gradient-text {
+    background-image: linear-gradient(to right, #34d399, #16a34a);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  section:nth-of-type(odd) {
+    background-color: hsl(var(--section-odd));
+  }
+
+  section:nth-of-type(even) {
+    background-color: hsl(var(--section-even));
+  }
+  .contact-btn {
+    background-color: inherit;
+    transition: all 0.1s ease;
+  }
+
+  .contact-btn:hover {
+    background: linear-gradient(to right, #34d399, #16a34a);
+  }
+
+  .nav-button {
+    color: var(--foreground);
+    transition: color 0.3s;
+    font-weight: 500;
+  }
+
+  .nav-button:hover {
+    background-image: linear-gradient(to right, #34d399, #16a34a);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .text-light-mode {
+    color: black;
+  }
+
+  .text-dark-mode {
+    color: white;
+  }
+
+  .light-mode {
+    background-color: transparent;
+    color: #0a0a0a;
+  }
+
+  .light-mode:hover {
+    color: white;
+    background: linear-gradient(to right, #34d399, #16a34a);
+  }
+
+  .light-mode:focus {
+    border: linear-gradient(to right, #34d399, #16a34a);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
