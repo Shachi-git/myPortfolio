@@ -34,7 +34,7 @@ const projects: Project[] = [
     longDescription:
       'Konek is a full-stack blog application built with Next.js, Sanity (headless CMS), and deployed on Vercel. It allows users to log in, create and publish their own posts, and explore content from other users with filtering options by views and recency. The project demonstrates integration of modern frontend frameworks with a content management system, delivering a scalable and production-ready blogging experience.',
     image: '/Konek.png',
-    tech: ['React', 'Next.js', 'TailwindCSS', 'Sanity'],
+    tech: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Sanity'],
     category: 'Full-stack',
     demoUrl: 'https://konek.vercel.app',
     sourceUrl: 'https://github.com/Shachi-git/Konek',
@@ -56,7 +56,7 @@ const projects: Project[] = [
     longDescription:
       'This project recreates the classic pencil-and-paper game Tic-Tac-Toe in a modern web format using Next.js and deployed on Vercel. Designed for two players, it features responsive design, smooth interactions, and accurate game logic for win/draw conditions. Future improvements are planned to extend functionality and user engagement.',
     image: '/3T.png',
-    tech: ['Next.js', 'React', 'TailwindCSS'],
+    tech: ['Next.js', 'React', 'TypeScript', 'TailwindCSS'],
     category: 'Frontend',
     demoUrl: 'https://tic-tac-toe-rho-murex-43.vercel.app',
     sourceUrl: 'https://github.com/Shachi-git/Tic-tac-toe',
@@ -98,10 +98,12 @@ export function Projects() {
               style={{ animationDelay: `${index * 150}ms` }}
               onClick={() => setSelectedProject(project)}
             >
-              <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
+              <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden shadow-sm shadow-black">
                 <Image
                   src={project.image}
                   alt={project.title}
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -183,8 +185,10 @@ export function Projects() {
                 </DialogHeader>
 
                 <div className="space-y-6">
-                  <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                  <div className="aspect-video rounded-lg overflow-hidden shadow-sm shadow-black">
                     <Image
+                      width={400}
+                      height={400}
                       src={selectedProject.image}
                       alt={selectedProject.title}
                       className="w-full h-full object-cover"

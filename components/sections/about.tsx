@@ -84,7 +84,10 @@ export const About = () => {
               alt="JohnPaul-Photo"
               width={700}
               height={700}
-              className="ml-5 drop-shadow-[0_0_25px_rgba(16,185,129,0.8)] -mb-4"
+              className="ml-5 block -mb-4"
+              style={{
+                filter: 'drop-shadow(0 0 25px rgba(16,185,129,0.8))',
+              }}
             />
           </div>
         </div>

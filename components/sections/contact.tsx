@@ -70,20 +70,11 @@ export function Contact() {
     setIsSubmitting(true)
 
     try {
-      const response = await sendContactForm({
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-      })
       await sendContactForm({
         name: formData.name,
         email: formData.email,
         message: formData.message,
       })
-
-      if (!response.ok) {
-        throw new Error('Failed to send')
-      }
       toast({
         title: 'Message sent successfully!',
         description: "Thank you for your message. I'll get back to you soon.",
