@@ -125,7 +125,7 @@ export function Projects() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="mb-4 flex flex-wrap gap-2">
+              <div className="mb-4 flex-wrap gap-2">
                 {project.category.slice(0, 3).map((category) => (
                   <span
                     key={category}
