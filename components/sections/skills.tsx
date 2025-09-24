@@ -24,6 +24,8 @@ import {
   Users,
   Cloud,
 } from 'lucide-react'
+import { FaVuejs } from 'react-icons/fa'
+import { SiTailwindcss } from 'react-icons/si'
 
 const skillCategories = [
   {
@@ -44,9 +46,10 @@ const skillCategories = [
     icon: Globe,
     skills: [
       { name: 'React', icon: Atom },
+      { name: 'Vue.js', icon: FaVuejs },
       { name: 'Next.js', icon: Zap },
       { name: 'HTML/CSS', icon: FileText },
-      { name: 'Tailwind CSS', icon: Wind },
+      { name: 'Tailwind CSS', icon: SiTailwindcss },
       { name: 'Bootstrap', icon: Layers },
       { name: 'React Query', icon: Atom },
     ],

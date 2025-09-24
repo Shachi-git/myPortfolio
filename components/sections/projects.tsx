@@ -72,7 +72,7 @@ const projects: Project[] = [
     id: '3',
     title: 'All-on-Four - Dental Landing Page',
     description:
-      'A Vue.js landing page with Tailwind CSS and a HubSpot-integrated form for patient scheduling.',
+      'Vue.js landing page with Tailwind CSS and HubSpot form for scheduling.',
     longDescription:
       'All-on-Four - Dental Landing Page is a modern, responsive web application built with Vue.js and Tailwind CSS, designed to promote the All-on-Four dental implant service. The site provides a clean and professional interface where visitors can learn about the treatment and quickly schedule consultations through a built-in contact form. The project focuses on delivering an engaging user experience, optimized for mobile devices, accessibility, and fast performance to help improve lead conversion for dental practices.',
     image: '/All-on-Four-logo.png',
@@ -125,10 +125,15 @@ export function Projects() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="mb-4">
-                <span className="inline-block px-3 py-1 text-xs font-medium p-3 bg-emerald-300/10 text-emerald-400 rounded-full mb-2">
-                  {project.category}
-                </span>
+              <div className="mb-4 flex flex-wrap gap-2">
+                {project.category.slice(0, 3).map((category) => (
+                  <span
+                    key={category}
+                    className="inline-block px-3 py-1 text-xs font-medium p-3 bg-emerald-300/10 text-emerald-400 rounded-full mb-2"
+                  >
+                    {category}
+                  </span>
+                ))}
                 <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
