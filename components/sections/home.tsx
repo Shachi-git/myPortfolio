@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="relative h-screen w-full flex flex-col justify-center items-center text-center px-4"
+      className="relative h-screen w-full flex flex-col justify-center items-center text-center px-4 py-0 md:py-8"
     >
       {/* Effects */}
       <div className="absolute inset-0 overflow-hidden z-10">
