@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My Portfolio
 
 A modern developer portfolio built with **Next.js** and **Tailwind CSS** to showcase my projects, skills, and contact information.  
