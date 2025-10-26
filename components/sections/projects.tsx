@@ -18,6 +18,7 @@ interface Project {
   description: string
   longDescription: string
   image: string
+  Form?: string
   tech: string[]
   category: string[]
   demoUrl: string
@@ -28,6 +29,36 @@ interface Project {
 const projects: Project[] = [
   {
     id: '1',
+    title: 'Application Form',
+    description:
+      'A full-stack recruitment form built with Next.js, TypeScript, and MongoDB.',
+    longDescription:
+      'This project is a full-stack recruitment form platform built with Next.js 15.5.4, TypeScript, Tailwind CSS, ShadCN UI, and MongoDB. It delivers a structured, step-by-step job application workflow with real-time validation, local data persistence, and a seamless user experience. Each stage of the application process is designed for clarity and reliability, enabling candidates to easily complete and track their submissions while ensuring all data is securely stored in MongoDB. The system includes multiple submission phases that represent a complete recruitment flow — from initial details collection to final specialized assessments. It showcases practical use of modern React architecture with dynamic routing, API integration, and data management through MongoDB. The project also emphasizes maintainability and scalability through modular code organization, schema-based validation using Zod, and a consistent UI built with Tailwind CSS and ShadCN UI. Overall, it demonstrates full-stack proficiency in developing robust, production-ready form applications.',
+    Form: `
+Application Flow:
+- Initial Application: https://recruitment-form-silk.vercel.app/apply/initial
+- Loom Video Submission: https://recruitment-form-silk.vercel.app/apply/loomVideo
+- Final Application - Frontend: https://recruitment-form-silk.vercel.app/apply/final/frontend
+- Final Application - Backend: https://recruitment-form-silk.vercel.app/apply/final/backend
+- Final Application - DevOps: https://recruitment-form-silk.vercel.app/apply/final/devops
+`,
+
+    image: '/AF.png',
+    tech: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB'],
+    category: ['Full-stack'],
+    demoUrl: 'https://recruitment-form-silk.vercel.app/apply/initial',
+    sourceUrl: 'https://github.com/Shachi-git/recruitment-form',
+    features: [
+      'Multi-step Form Workflow: User-friendly form progression with client-side validation',
+      'Local Data Persistence: Automatically saves progress in localStorage',
+      'MongoDB Integration: Securely stores all submissions',
+      'Responsive UI: Built with Tailwind CSS and ShadCN UI for consistency',
+      'Real-time Validation: Ensures data accuracy using Zod',
+      'Toast Feedback System: Provides instant user feedback on submission success or error',
+    ],
+  },
+  {
+    id: '2',
     title: 'Konek - Blog Platform',
     description:
       'A full-stack blog platform where users can create, publish, and browse posts.',
@@ -49,7 +80,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: '2',
+    id: '3',
     title: 'Tic-Tac-Toe - Two Player Game',
     description:
       'A simple two-player digital Tic-Tac-Toe game with responsive UI and turn-based logic.',
@@ -69,7 +100,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: '3',
+    id: '4',
     title: 'All-on-Four - Dental Landing Page',
     description:
       'Vue.js landing page with Tailwind CSS and HubSpot form for scheduling.',
@@ -198,7 +229,7 @@ export function Projects() {
           open={!!selectedProject}
           onOpenChange={() => setSelectedProject(null)}
         >
-          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogContent className="w-[95%] sm:max-w-4xl max-h-[90vh] overflow-y-auto p-4 sm:p-8">
             {selectedProject && (
               <>
                 <DialogHeader>
@@ -236,6 +267,40 @@ export function Projects() {
                       ))}
                     </ul>
                   </div>
+                  {selectedProject?.Form && (
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">
+                        Application Flow
+                      </h3>
+                      <ul className="space-y-2">
+                        {selectedProject.Form.split('\n')
+                          .filter((line) => line.trim().startsWith('-'))
+                          .map((line, index) => {
+                            const [label, url] = line
+                              .replace('- ', '')
+                              .split(': ')
+                            return (
+                              <li
+                                key={index}
+                                className="flex flex-col sm:flex-row sm:items-center gap-2"
+                              >
+                                <span className="text-gray-400/90">
+                                  {label}:
+                                </span>
+                                <a
+                                  href={url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-emerald-400 hover:underline break-all"
+                                >
+                                  {url}
+                                </a>
+                              </li>
+                            )
+                          })}
+                      </ul>
+                    </div>
+                  )}
 
                   <div>
                     <h3 className="text-lg font-semibold mb-3">

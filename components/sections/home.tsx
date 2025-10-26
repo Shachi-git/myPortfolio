@@ -35,8 +35,7 @@ export const Home = () => {
           </h1>
           <p className="text-xl text-gray-400/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Full-stack developer passionate about creating beautiful, functional
-            web applications that solve real-world problems and deliver
-            exceptional user experiences.
+            web applications that deliver exceptional user experiences.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

@@ -3,29 +3,35 @@
 import { useState } from 'react'
 import {
   Code,
-  Database,
   Palette,
   Server,
   Smartphone,
   Globe,
   Atom,
-  FileCode2,
   Zap,
-  Wind,
   FileText,
   Layers,
-  Leaf,
   GitBranch,
   Settings,
   Accessibility,
-  Figma,
   Brush,
   Lightbulb,
   Users,
   Cloud,
 } from 'lucide-react'
-import { FaVuejs } from 'react-icons/fa'
-import { SiTailwindcss } from 'react-icons/si'
+import { FaVuejs, FaCode, FaNodeJs } from 'react-icons/fa'
+import {
+  SiTailwindcss,
+  SiMongodb,
+  SiSanity,
+  SiDirectus,
+  SiFigma,
+  SiReactquery,
+  SiJavascript,
+  SiTypescript,
+  SiCplusplus,
+} from 'react-icons/si'
+import { PiFileCSharp } from 'react-icons/pi'
 
 const skillCategories = [
   {
@@ -33,10 +39,10 @@ const skillCategories = [
     label: 'Languages',
     icon: Code,
     skills: [
-      { name: 'TypeScript', icon: FileCode2 },
-      { name: 'JavaScript', icon: FileCode2 },
-      { name: 'C++', icon: Code },
-      { name: 'C#', icon: Code },
+      { name: 'TypeScript', icon: SiTypescript },
+      { name: 'JavaScript', icon: SiJavascript },
+      { name: 'C++', icon: SiCplusplus },
+      { name: 'C#', icon: PiFileCSharp },
       { name: 'C', icon: Code },
     ],
   },
@@ -51,7 +57,8 @@ const skillCategories = [
       { name: 'HTML/CSS', icon: FileText },
       { name: 'Tailwind CSS', icon: SiTailwindcss },
       { name: 'Bootstrap', icon: Layers },
-      { name: 'React Query', icon: Atom },
+      { name: 'React Query', icon: SiReactquery },
+      { name: 'Go High Level', icon: FaCode },
     ],
   },
   {
@@ -59,9 +66,10 @@ const skillCategories = [
     label: 'Backend & Services',
     icon: Server,
     skills: [
-      { name: 'Node.js', icon: Leaf },
-      { name: 'Sanity', icon: Database },
-      { name: 'MongoDB', icon: Database },
+      { name: 'Node.js', icon: FaNodeJs },
+      { name: 'Sanity', icon: SiSanity },
+      { name: 'Directus', icon: SiDirectus },
+      { name: 'MongoDB', icon: SiMongodb },
     ],
   },
   {
@@ -86,7 +94,7 @@ const skillCategories = [
     label: 'Design & Others',
     icon: Palette,
     skills: [
-      { name: 'Figma', icon: Figma },
+      { name: 'Figma', icon: SiFigma },
       { name: 'Adobe Photoshop', icon: Brush },
       { name: 'Adobe Illustrator', icon: Brush },
       { name: 'Canva', icon: Lightbulb },
@@ -155,7 +163,7 @@ export const Skills = () => {
             return (
               <div
                 key={skill.name}
-                className="flex items-center border border-gray-500/20 gap-3 px-6 py-4 shadow-[0_0_15px_rgba(0,0,2,0.2)] skills-btn rounded-lg font-medium text-foreground  transition-all duration-300 cursor-default"
+                className="flex items-center border border-gray-500/20 gap-3 px-6 py-4 shadow-[0_0_15px_rgba(0,0,2,0.2)] rounded-lg font-medium text-foreground "
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <SkillIcon className="h-5 w-5 flex-shrink-0" />
@@ -172,7 +180,7 @@ export const Skills = () => {
             {['BitBucket', 'SourceTree'].map((tech) => (
               <span
                 key={tech}
-                className="px-4 py-2 border-gray-500/20 skills-btn rounded-lg text-sm font-medium text-foreground  shadow-[0_0_15px_rgba(0,0,10,0.5)]  transition-all duration-300 cursor-default"
+                className="px-4 py-2 border-gray-500/20 rounded-lg text-sm font-medium text-foreground  shadow-[0_0_15px_rgba(0,0,10,0.5)]  transition-all duration-300 cursor-default"
               >
                 {tech}
               </span>

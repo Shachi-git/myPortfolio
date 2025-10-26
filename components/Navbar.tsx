@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTheme } from 'next-themes'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
@@ -19,6 +19,7 @@ export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mounted, setMounted] = useState(false)
   const { setTheme, resolvedTheme } = useTheme()
+  const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setMounted(true)
@@ -33,6 +34,24 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isMenuOpen])
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
     if (element) {
@@ -41,9 +60,8 @@ export const Navbar = () => {
     }
   }
 
-  if (!mounted) {
-    return null
-  }
+  if (!mounted) return null
+
   return (
     <nav
       className={cn(
@@ -64,7 +82,7 @@ export const Navbar = () => {
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
                 className={cn(
-                  ' transition-colors duration-100 nav-button cursor-pointer',
+                  'transition-colors duration-100 nav-button cursor-pointer',
                   resolvedTheme === 'dark'
                     ? 'text-dark-mode'
                     : 'text-light-mode',
@@ -81,7 +99,7 @@ export const Navbar = () => {
                 setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
               }
               className={cn(
-                ' p-2 transition-colors duration-100 border-transparent border cursor-pointer',
+                'p-2 transition-colors duration-100 border-transparent border cursor-pointer',
                 resolvedTheme === 'dark'
                   ? 'text-dark-mode'
                   : 'focus:border-[#16a34a] light-mode text-light-mode',
@@ -129,7 +147,10 @@ export const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 bg-background/95 backdrop-blur-lg rounded-lg mt-2 shadow-medium border">
+          <div
+            ref={menuRef}
+            className="md:hidden py-4 bg-background/95 backdrop-blur-lg rounded-lg mt-2 shadow-medium border"
+          >
             {navItems.map((item) => (
               <button
                 key={item.label}

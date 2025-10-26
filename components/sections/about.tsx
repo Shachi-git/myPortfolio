@@ -77,14 +77,13 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Image/Visual (only on large screens) */}
           <div className="hidden lg:block relative border-b-4 border-emerald-400">
             <Image
               src="/jp.png"
               alt="JohnPaul-Photo"
               width={700}
               height={700}
-              className="ml-5 block -mb-4"
+              className="ml-5 block"
               style={{
                 filter: 'drop-shadow(0 0 25px rgba(16,185,129,0.8))',
               }}
