@@ -57,28 +57,28 @@ Application Flow:
       'Toast Feedback System: Provides instant user feedback on submission success or error',
     ],
   },
-  {
-    id: '2',
-    title: 'Konek - Blog Platform',
-    description:
-      'A full-stack blog platform where users can create, publish, and browse posts.',
-    longDescription:
-      'Konek is a full-stack blog application built with Next.js, Sanity (headless CMS), and deployed on Vercel. It allows users to log in, create and publish their own posts, and explore content from other users with filtering options by views and recency. The project demonstrates integration of modern frontend frameworks with a content management system, delivering a scalable and production-ready blogging experience.',
-    image: '/Konek.png',
-    tech: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Sanity'],
-    category: ['Full-stack'],
-    demoUrl: 'https://konek.vercel.app',
-    sourceUrl: 'https://github.com/Shachi-git/Konek',
-    features: [
-      'Manual authentication for user login',
-      'Post creation & publishing powered by Sanity CMS',
-      'Filtering options by views and latest posts',
-      'CMS integration for managing posts and user data',
-      'Deployed on Vercel for fast and scalable hosting',
-      'Responsive design for all devices',
-      'Planned enhancements: like, comment, share, UI improvements, edit, and delete',
-    ],
-  },
+  // {
+  //   id: '2',
+  //   title: 'Konek - Blog Platform',
+  //   description:
+  //     'A full-stack blog platform where users can create, publish, and browse posts.',
+  //   longDescription:
+  //     'Konek is a full-stack blog application built with Next.js, Sanity (headless CMS), and deployed on Vercel. It allows users to log in, create and publish their own posts, and explore content from other users with filtering options by views and recency. The project demonstrates integration of modern frontend frameworks with a content management system, delivering a scalable and production-ready blogging experience.',
+  //   image: '/Konek.png',
+  //   tech: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Sanity'],
+  //   category: ['Full-stack'],
+  //   demoUrl: 'https://konek.vercel.app',
+  //   sourceUrl: 'https://github.com/Shachi-git/Konek',
+  //   features: [
+  //     'Manual authentication for user login',
+  //     'Post creation & publishing powered by Sanity CMS',
+  //     'Filtering options by views and latest posts',
+  //     'CMS integration for managing posts and user data',
+  //     'Deployed on Vercel for fast and scalable hosting',
+  //     'Responsive design for all devices',
+  //     'Planned enhancements: like, comment, share, UI improvements, edit, and delete',
+  //   ],
+  // },
   {
     id: '3',
     title: 'Tic-Tac-Toe - Two Player Game',
@@ -99,24 +99,24 @@ Application Flow:
       'Planned improvements: AI opponent, diffeculty base, UI animations',
     ],
   },
-  {
-    id: '4',
-    title: 'All-on-Four - Dental Landing Page',
-    description:
-      'Vue.js landing page with Tailwind CSS and HubSpot form for scheduling.',
-    longDescription:
-      'All-on-Four - Dental Landing Page is a modern, responsive web application built with Vue.js and Tailwind CSS, designed to promote the All-on-Four dental implant service. The site provides a clean and professional interface where visitors can learn about the treatment and quickly schedule consultations through a built-in contact form. The project focuses on delivering an engaging user experience, optimized for mobile devices, accessibility, and fast performance to help improve lead conversion for dental practices.',
-    image: '/All-on-Four-logo.png',
-    tech: ['Vue.js', 'Axios', 'HubSpot'],
-    category: ['FrontEnd', 'API integration'],
-    demoUrl: 'https://shachi-git.github.io/allonfour',
-    sourceUrl: 'https://github.com/Shachi-git/allonfour',
-    features: [
-      'Designed and developed a responsive landing page for a dental clinic promoting All-on-Four treatment',
-      'Implemented a contact form for scheduling inquiries, enabling seamless communication between clients and the clinic.',
-      'Focused on clean UI/UX, accessibility, and mobile-first design to improve engagement and conversion.',
-    ],
-  },
+  // {
+  //   id: '4',
+  //   title: 'All-on-Four - Dental Landing Page',
+  //   description:
+  //     'Vue.js landing page with Tailwind CSS and HubSpot form for scheduling.',
+  //   longDescription:
+  //     'All-on-Four - Dental Landing Page is a modern, responsive web application built with Vue.js and Tailwind CSS, designed to promote the All-on-Four dental implant service. The site provides a clean and professional interface where visitors can learn about the treatment and quickly schedule consultations through a built-in contact form. The project focuses on delivering an engaging user experience, optimized for mobile devices, accessibility, and fast performance to help improve lead conversion for dental practices.',
+  //   image: '/All-on-Four-logo.png',
+  //   tech: ['Vue.js', 'Axios', 'HubSpot'],
+  //   category: ['FrontEnd', 'API integration'],
+  //   demoUrl: 'https://shachi-git.github.io/allonfour',
+  //   sourceUrl: 'https://github.com/Shachi-git/allonfour',
+  //   features: [
+  //     'Designed and developed a responsive landing page for a dental clinic promoting All-on-Four treatment',
+  //     'Implemented a contact form for scheduling inquiries, enabling seamless communication between clients and the clinic.',
+  //     'Focused on clean UI/UX, accessibility, and mobile-first design to improve engagement and conversion.',
+  //   ],
+  // },
 ]
 
 export function Projects() {

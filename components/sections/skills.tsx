@@ -5,7 +5,6 @@ import {
   Code,
   Palette,
   Server,
-  Smartphone,
   Globe,
   Atom,
   Zap,
@@ -14,24 +13,18 @@ import {
   GitBranch,
   Settings,
   Accessibility,
-  Brush,
   Lightbulb,
   Users,
-  Cloud,
 } from 'lucide-react'
-import { FaVuejs, FaCode, FaNodeJs } from 'react-icons/fa'
+import { FaVuejs, FaPython } from 'react-icons/fa'
 import {
   SiTailwindcss,
-  SiMongodb,
-  SiSanity,
-  SiDirectus,
-  SiFigma,
   SiReactquery,
   SiJavascript,
   SiTypescript,
-  SiCplusplus,
+  SiFastapi,
+  SiPostgresql,
 } from 'react-icons/si'
-import { PiFileCSharp } from 'react-icons/pi'
 
 const skillCategories = [
   {
@@ -41,9 +34,10 @@ const skillCategories = [
     skills: [
       { name: 'TypeScript', icon: SiTypescript },
       { name: 'JavaScript', icon: SiJavascript },
-      { name: 'C++', icon: SiCplusplus },
-      { name: 'C#', icon: PiFileCSharp },
-      { name: 'C', icon: Code },
+      { name: 'Python', icon: FaPython },
+      // { name: 'C++', icon: SiCplusplus },
+      // { name: 'C#', icon: PiFileCSharp },
+      // { name: 'C', icon: Code },
     ],
   },
   {
@@ -58,45 +52,45 @@ const skillCategories = [
       { name: 'Tailwind CSS', icon: SiTailwindcss },
       { name: 'Bootstrap', icon: Layers },
       { name: 'React Query', icon: SiReactquery },
-      { name: 'Go High Level', icon: FaCode },
+      // { name: 'Go High Level', icon: FaCode },
     ],
   },
   {
     id: 'backend',
-    label: 'Backend & Services',
+    label: 'Backend & Database',
     icon: Server,
     skills: [
-      { name: 'Node.js', icon: FaNodeJs },
-      { name: 'Sanity', icon: SiSanity },
-      { name: 'Directus', icon: SiDirectus },
-      { name: 'MongoDB', icon: SiMongodb },
+      { name: 'FastAPI', icon: SiFastapi },
+      { name: 'PostgreSQL', icon: SiPostgresql },
+      // { name: 'Directus', icon: SiDirectus },
+      // { name: 'MongoDB', icon: SiMongodb },
     ],
   },
   {
     id: 'tools',
-    label: 'Framework & Tools',
+    label: 'Version Control',
     icon: Settings,
     skills: [
-      { name: 'Vercel', icon: Cloud },
-      { name: 'Vite', icon: Zap },
+      // { name: 'Vercel', icon: Cloud },
+      // { name: 'Vite', icon: Zap },
       { name: 'Git', icon: GitBranch },
-      { name: 'Sanity Studio', icon: Settings },
+      // { name: 'Sanity Studio', icon: Settings },
     ],
   },
-  {
-    id: 'mobile',
-    label: 'Mobile',
-    icon: Smartphone,
-    skills: [{ name: 'React Native', icon: Atom }],
-  },
+  // {
+  //   id: 'mobile',
+  //   label: 'Mobile',
+  //   icon: Smartphone,
+  //   skills: [{ name: 'React Native', icon: Atom }],
+  // },
   {
     id: 'design',
     label: 'Design & Others',
     icon: Palette,
     skills: [
-      { name: 'Figma', icon: SiFigma },
-      { name: 'Adobe Photoshop', icon: Brush },
-      { name: 'Adobe Illustrator', icon: Brush },
+      // { name: 'Figma', icon: SiFigma },
+      // { name: 'Adobe Photoshop', icon: Brush },
+      // { name: 'Adobe Illustrator', icon: Brush },
       { name: 'Canva', icon: Lightbulb },
       { name: 'UI/UX Design', icon: Lightbulb },
       { name: 'Web Accessibility', icon: Accessibility },
