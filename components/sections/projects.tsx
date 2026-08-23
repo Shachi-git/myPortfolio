@@ -97,24 +97,24 @@ Application Flow:
       'Planned improvements: AI opponent, diffeculty base, UI animations',
     ],
   },
-  // {
-  //   id: '4',
-  //   title: 'All-on-Four - Dental Landing Page',
-  //   description:
-  //     'Vue.js landing page with Tailwind CSS and HubSpot form for scheduling.',
-  //   longDescription:
-  //     'All-on-Four - Dental Landing Page is a modern, responsive web application built with Vue.js and Tailwind CSS, designed to promote the All-on-Four dental implant service. The site provides a clean and professional interface where visitors can learn about the treatment and quickly schedule consultations through a built-in contact form. The project focuses on delivering an engaging user experience, optimized for mobile devices, accessibility, and fast performance to help improve lead conversion for dental practices.',
-  //   image: '/All-on-Four-logo.png',
-  //   tech: ['Vue.js', 'Axios', 'HubSpot'],
-  //   category: ['FrontEnd', 'API integration'],
-  //   demoUrl: 'https://shachi-git.github.io/allonfour',
-  //   sourceUrl: 'https://github.com/Shachi-git/allonfour',
-  //   features: [
-  //     'Designed and developed a responsive landing page for a dental clinic promoting All-on-Four treatment',
-  //     'Implemented a contact form for scheduling inquiries, enabling seamless communication between clients and the clinic.',
-  //     'Focused on clean UI/UX, accessibility, and mobile-first design to improve engagement and conversion.',
-  //   ],
-  // },
+{
+  id: '4',
+  title: 'HealthSphere Medical Care',
+  description:
+    'Responsive healthcare landing page built with Vue.js, Tailwind CSS, and Supabase.',
+  longDescription:
+    'Healthcare Landing Page is a modern, responsive web application built with Vue.js and Tailwind CSS. The project provides a clean and professional healthcare interface with service sections, FAQs, responsive layouts, and an inquiry form powered by Supabase. It focuses on accessibility, mobile responsiveness, performance, and a polished user experience.',
+  image: '/healthcare-logo.png',
+  tech: ['Vue.js', 'Tailwind CSS', 'Supabase'],
+  category: ['FrontEnd', 'API integration'],
+  demoUrl: 'https://health-landingpage-one.vercel.app',
+  sourceUrl: 'https://github.com/Shachi-git/health-landingpage',
+  features: [
+    'Designed and developed a responsive healthcare landing page with a modern and professional UI.',
+    'Implemented a healthcare inquiry form with client-side validation and Supabase integration.',
+    'Built responsive sections, FAQ interactions, and call-to-action elements optimized for mobile and desktop users.',
+  ],
+},
 ]
 
 export function Projects() {
