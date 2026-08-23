@@ -26,31 +26,36 @@ export const About = () => {
 
             <div className="space-y-4 flex-grow text-muted-foreground leading-relaxed text-justify text-gray-400/90">
               <p>
-                I am Computer Engineering graduate from the Polytechnic
-                University of the Philippines - Santa Maria Bulacan Campus who
-                discovered a real passion for software development. Even though
-                my course leans more toward hardware and automation, I have
-                grown to enjoy both sides. I like hardware just as much as I
-                enjoy software development, and right now I am exploring how to
-                maximize my skills in both areas while continuing to learn and
-                grow.
+                I am a Computer Engineering graduate from the Polytechnic University of
+                the Philippines - Santa Maria Bulacan Campus with a growing passion for
+                software development. While my degree has a strong foundation in hardware
+                and automation, I enjoy working across both hardware and software and
+                continue to explore how I can make the most of both skill sets.
               </p>
 
               <p>
-                Most of what I know comes from a mix of internships, hands-on
-                projects, and plenty of self-study. Along the way, I have gotten
-                comfortable with React, Next.js, TypeScript, Tailwind CSS, and
-                Node.js, and I like experimenting with new tools that make
-                development faster and cleaner. I enjoy taking an idea from
-                scratch and shaping it into something people can actually use.
+                I now have professional experience as an on-call Frontend Developer from Septempber
+                upto August, working on websites and frontend interfaces while gaining experience in
+                real-world development environments. I also gained professional
+                experience as a Web Developer earlier this year, from January to August, which helped me
+                strengthen my development skills and better understand how software is
+                built and maintained in a professional setting.
               </p>
 
               <p>
-                Outside of coding, I am the type of person who always wants to
-                outdo {"yesterday's"} version of myself, whether that means
-                learning a new framework, fixing a tricky bug, or just picking
-                up a random skill that sparks my curiosity. For me, growth and
-                fun go hand in hand.
+                My experience has given me a strong foundation in React, Next.js,
+                TypeScript, Tailwind CSS, and FastAPI. I am now broadening my skills toward
+                full-stack development and currently studying FastAPI to strengthen my
+                backend knowledge. I am also exploring how backend systems connect with
+                AI, including agentic patterns, tool calling, and the development of more
+                capable AI-powered applications.
+              </p>
+
+              <p>
+                I believe learning never really stops, and I am always looking for ways
+                to improve through professional experience, personal projects, and
+                continuous study. I enjoy solving problems, experimenting with new
+                technologies, and gradually becoming a more well-rounded developer.
               </p>
             </div>
 
