@@ -57,28 +57,26 @@ Application Flow:
       'Toast Feedback System: Provides instant user feedback on submission success or error',
     ],
   },
-  // {
-  //   id: '2',
-  //   title: 'Konek - Blog Platform',
-  //   description:
-  //     'A full-stack blog platform where users can create, publish, and browse posts.',
-  //   longDescription:
-  //     'Konek is a full-stack blog application built with Next.js, Sanity (headless CMS), and deployed on Vercel. It allows users to log in, create and publish their own posts, and explore content from other users with filtering options by views and recency. The project demonstrates integration of modern frontend frameworks with a content management system, delivering a scalable and production-ready blogging experience.',
-  //   image: '/Konek.png',
-  //   tech: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Sanity'],
-  //   category: ['Full-stack'],
-  //   demoUrl: 'https://konek.vercel.app',
-  //   sourceUrl: 'https://github.com/Shachi-git/Konek',
-  //   features: [
-  //     'Manual authentication for user login',
-  //     'Post creation & publishing powered by Sanity CMS',
-  //     'Filtering options by views and latest posts',
-  //     'CMS integration for managing posts and user data',
-  //     'Deployed on Vercel for fast and scalable hosting',
-  //     'Responsive design for all devices',
-  //     'Planned enhancements: like, comment, share, UI improvements, edit, and delete',
-  //   ],
-  // },
+  {
+  id: '2',
+  title: 'BrightSmile Dental - Landing Page',
+  description:
+  'A dental landing page template built with Vue.js, Tailwind CSS, and Supabase.',
+  longDescription:
+    'A modern dental landing page template built with Vue.js and Tailwind CSS. It features a responsive design, interactive clinic locations, and Supabase integration for handling form submissions without a custom backend.',
+  image: '/BrightSmile.png',
+  tech: ['Vue.js', 'Vite', 'TailwindCSS', 'Supabase'],
+  category: ['Frontend'],
+  demoUrl: 'https://dental-landingpage-silk.vercel.app/#/',
+  sourceUrl: 'https://github.com/Shachi-git/dental-landingpage',
+  features: [
+    'Responsive dental landing page template',
+    'Interactive clinic location section',
+    'Supabase integration for form submissions',
+    'Mobile-friendly and responsive UI',
+    'Built with reusable Vue.js components',
+  ],
+},
   {
     id: '3',
     title: 'Tic-Tac-Toe - Two Player Game',
