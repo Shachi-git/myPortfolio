@@ -115,6 +115,32 @@ Application Flow:
     'Built responsive sections, FAQ interactions, and call-to-action elements optimized for mobile and desktop users.',
   ],
 },
+  {
+    id: '5',
+    title: 'Emma & Daniel - Wedding Website',
+    description:
+      'A modern and elegant wedding website designed to give guests a beautiful digital experience.',
+    longDescription:
+      'A responsive wedding website created with Next.js, React, TypeScript, and Tailwind CSS. The website brings together the couple’s story, wedding details, event schedule, photo gallery, RSVP form, frequently asked questions, and countdown timer in one polished experience. It also includes a dreamy fairytale-style intro animation with floating petals, ambient music controls, and smooth page interactions. The design focuses on elegance, responsiveness, and ease of use across desktop and mobile devices.',
+    image: '/wedding-website.png',
+    tech: ['Next.js', 'React', 'TypeScript', 'TailwindCSS'],
+    category: ['Frontend', 'UI/UX'],
+    demoUrl: 'https://wedding-design-alpha.vercel.app',
+    sourceUrl: 'https://github.com/Shachi-git/wedding-design',
+    features: [
+      'Modern and elegant wedding website design',
+      'Dreamy fairytale intro animation with floating petals',
+      'Responsive layout for desktop, tablet, and mobile',
+      'Couple story presented in a chronological timeline',
+      'Wedding details and event schedule sections',
+      'Interactive photo gallery with lightbox support',
+      'RSVP form with numeric multi-digit guest count',
+      'FAQ accordion section',
+      'Wedding countdown timer',
+      'Ambient music controls',
+      'Reusable React and Tailwind CSS components',
+    ],
+  },
 ]
 
 export function Projects() {
