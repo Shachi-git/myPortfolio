@@ -26,36 +26,36 @@ export const About = () => {
 
             <div className="space-y-4 flex-grow text-muted-foreground leading-relaxed text-justify text-gray-400/90">
               <p>
-                I am a Computer Engineering graduate from the Polytechnic University of
-                the Philippines - Santa Maria Bulacan Campus with a growing passion for
-                software development. While my degree has a strong foundation in hardware
-                and automation, I enjoy working across both hardware and software and
-                continue to explore how I can make the most of both skill sets.
+                I am a Computer Engineering graduate from the Polytechnic
+                University of the Philippines with professional experience in
+                web development. I have worked on frontend interfaces, websites,
+                and web applications using technologies such as React, Next.js,
+                TypeScript, Vue.js, and Tailwind CSS.
               </p>
 
               <p>
-                I now have professional experience as an on-call Frontend Developer from Septempber
-                upto August, working on websites and frontend interfaces while gaining experience in
-                real-world development environments. I also gained professional
-                experience as a Web Developer earlier this year, from January to August, which helped me
-                strengthen my development skills and better understand how software is
-                built and maintained in a professional setting.
+                My professional experience has mainly been focused on frontend
+                development, while also giving me opportunities to work with
+                backend systems, databases, and application workflows. These
+                experiences have motivated me to expand beyond frontend
+                development and build a stronger understanding of the full web
+                development process.
               </p>
 
               <p>
-                My experience has given me a strong foundation in React, Next.js,
-                TypeScript, Tailwind CSS, and FastAPI. I am now broadening my skills toward
-                full-stack development and currently studying FastAPI to strengthen my
-                backend knowledge. I am also exploring how backend systems connect with
-                AI, including agentic patterns, tool calling, and the development of more
-                capable AI-powered applications.
+                I am currently developing my backend skills with Python,
+                FastAPI, REST APIs, and PostgreSQL as I work toward becoming a
+                Junior Full-Stack Developer. I enjoy learning how frontend
+                applications communicate with backend services and how the
+                different parts of a web application work together.
               </p>
 
               <p>
-                I believe learning never really stops, and I am always looking for ways
-                to improve through professional experience, personal projects, and
-                continuous study. I enjoy solving problems, experimenting with new
-                technologies, and gradually becoming a more well-rounded developer.
+                I believe learning never really stops, and I am always looking
+                for ways to improve through professional experience, personal
+                projects, and continuous study. My goal is to continue growing
+                as a developer, take on more backend responsibilities, and
+                become a well-rounded full-stack developer.
               </p>
             </div>
 

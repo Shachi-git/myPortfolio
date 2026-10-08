@@ -17,43 +17,43 @@ export const Home = () => {
       id="home"
       className="relative h-screen w-full flex flex-col justify-center items-center text-center px-4 py-0 md:py-8"
     >
-{/* Background Effects */}
-<div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-  {/* Existing glowing background */}
+      {/* Background Effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        {/* Existing glowing background */}
 
-  {/* Top-right glow */}
-  <div className="absolute -top-32 -right-32 w-96 h-96 gradient-bg rounded-full blur-3xl opacity-10 dark:opacity-15 animate-float-slow" />
+        {/* Top-right glow */}
+        <div className="absolute -top-32 -right-32 w-96 h-96 gradient-bg rounded-full blur-3xl opacity-10 dark:opacity-15 animate-float-slow" />
 
-  {/* Bottom-left glow */}
-  <div className="absolute -bottom-40 -left-40 w-[28rem] h-[28rem] gradient-bg rounded-full blur-3xl opacity-10 dark:opacity-15 animate-float-reverse" />
+        {/* Bottom-left glow */}
+        <div className="absolute -bottom-40 -left-40 w-[28rem] h-[28rem] gradient-bg rounded-full blur-3xl opacity-10 dark:opacity-15 animate-float-reverse" />
 
-  {/* Center glow */}
-  <div className="absolute top-1/2 -right-1/14 w-80 h-80 gradient-bg rounded-full blur-3xl opacity-5 dark:opacity-10 animate-pulse-slow" />
+        {/* Center glow */}
+        <div className="absolute top-1/2 -right-1/14 w-80 h-80 gradient-bg rounded-full blur-3xl opacity-5 dark:opacity-10 animate-pulse-slow" />
 
-  {/* Moving glow */}
-  <div className="absolute top-1/4 -left-20 w-64 h-64 gradient-bg rounded-full blur-3xl opacity-5 dark:opacity-10 animate-drift" />
+        {/* Moving glow */}
+        <div className="absolute top-1/4 -left-20 w-64 h-64 gradient-bg rounded-full blur-3xl opacity-5 dark:opacity-10 animate-drift" />
 
-  {/* Subtle grid */}
-  <div className="absolute inset-0 bg-grid opacity-[0.025] dark:opacity-[0.04]" />
+        {/* Subtle grid */}
+        <div className="absolute inset-0 bg-grid opacity-[0.025] dark:opacity-[0.04]" />
 
-  {/* Falling emerald stars */}
-  {Array.from({ length: 35 }).map((_, i) => (
-    <span
-      key={i}
-      className="absolute text-emerald-500/40 dark:text-emerald-300/50 animate-fall"
-      style={{
-        left: `${(i * 37) % 100}%`,
-        top: `${-10 - ((i * 17) % 100)}%`,
-        fontSize: `${6 + (i % 4) * 2}px`,
-        animationDelay: `${(i * 0.35) % 8}s`,
-        animationDuration: `${6 + (i % 5)}s`,
-        filter: 'drop-shadow(0 0 5px rgba(52, 211, 153, 0.4))',
-      }}
-    >
-      ✦
-    </span>
-  ))}
-</div>
+        {/* Falling emerald stars */}
+        {Array.from({ length: 35 }).map((_, i) => (
+          <span
+            key={i}
+            className="absolute text-emerald-500/40 dark:text-emerald-300/50 animate-fall"
+            style={{
+              left: `${(i * 37) % 100}%`,
+              top: `${-10 - ((i * 17) % 100)}%`,
+              fontSize: `${6 + (i % 4) * 2}px`,
+              animationDelay: `${(i * 0.35) % 8}s`,
+              animationDuration: `${6 + (i % 5)}s`,
+              filter: 'drop-shadow(0 0 5px rgba(52, 211, 153, 0.4))',
+            }}
+          >
+            ✦
+          </span>
+        ))}
+      </div>
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
@@ -62,8 +62,9 @@ export const Home = () => {
             John Paul <span className="gradient-text">Olimpo</span>
           </h1>
           <p className="text-xl text-gray-400/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Full-stack developer passionate about creating beautiful, functional
-            web applications that deliver exceptional user experiences.
+            Junior Full-Stack Developer with experience in frontend development,
+            currently growing my backend skills and working toward becoming a
+            well-rounded full-stack developer.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

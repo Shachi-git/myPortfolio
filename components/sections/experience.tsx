@@ -1,10 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import {
-  Briefcase,
-  Calendar,
-} from 'lucide-react'
+import { Briefcase, Calendar } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -37,15 +34,7 @@ const experiences: Experience[] = [
     longDescription:
       'Worked as an on-call frontend developer, helping build and maintain websites and landing pages for different projects. My work involved translating designs into responsive web interfaces, implementing updates based on project requirements, fixing frontend issues, and maintaining existing websites.',
     category: ['Frontend', 'Web Development'],
-    tech: [
-      'React',
-      'Vue.js',
-      'Next.js',
-      'JavaScript',
-      'HTML',
-      'CSS',
-      'Git',
-    ],
+    tech: ['React', 'Vue.js', 'Next.js', 'JavaScript', 'HTML', 'CSS', 'Git'],
     responsibilities: [
       'Built and maintained websites and landing pages using React, Vue, and Next.js',
       'Translated designs into responsive and functional web interfaces',
@@ -63,23 +52,23 @@ const experiences: Experience[] = [
     description:
       'Worked on frontend interfaces, web workflows, and backend-related tasks based on project requirements and design specs.',
     longDescription:
-      'Worked on frontend interfaces and internal workflows based on design specifications, while also contributing to backend-related tasks and bug fixes. My role provided experience working across different parts of a web application, including frontend development, and backend functionality.',
-    category: ['Full-stack', 'Frontend'],
+      'Worked across different parts of web applications, primarily focusing on frontend interfaces and workflows while also contributing to backend-related tasks. I worked with PostgreSQL, FastAPI, and REST APIs, gaining practical experience in how frontend applications connect with backend services and databases.',
+    category: ['Full-stack'],
     tech: [
       'React',
-      'Next.js',
       'TypeScript',
       'PostgreSQL',
       'FastAPI',
       'REST API',
+      'Alembic',
     ],
     responsibilities: [
       'Built and maintained frontend interfaces and user workflows',
       'Translated design specifications into responsive web pages',
       'Worked on document and text extraction-related fixes',
       'Worked with PostgreSQL and backend functionality',
-      'Explored FastAPI and REST APIs to improve backend development skills',
-      'Collaborated with the team on website updates and improvements',
+      'Explored FastAPI and REST APIs to strengthen backend development skills',
+      'Gained experience working across frontend, backend, and database components of web applications',
     ],
   },
   {
@@ -92,14 +81,7 @@ const experiences: Experience[] = [
     longDescription:
       'Worked as part of a collaborative team on DiSH, a Microsoft-related project. My work focused on improving web accessibility, usability, and performance while participating in Agile development practices alongside engineers, QA, designers, and product managers.',
     category: ['Frontend', 'UI/UX', 'Accessibility'],
-    tech: [
-      'React',
-      'JavaScript',
-      'HTML',
-      'CSS',
-      'Web Accessibility',
-      'Git',
-    ],
+    tech: ['React', 'JavaScript', 'HTML', 'CSS', 'Web Accessibility', 'Git'],
     responsibilities: [
       'Improved web accessibility compliance to make the website more inclusive for diverse users',
       'Collaborated in Agile sprints with engineers, QA, designers, and product managers',
@@ -117,14 +99,7 @@ const experiences: Experience[] = [
     longDescription:
       'Worked on frontend improvements for Zentive, implementing UI changes and fixing bugs based on design specifications. This experience helped strengthen my understanding of React-based development and translating designs into functional interfaces.',
     category: ['Frontend', 'UI Development'],
-    tech: [
-      'React',
-      'Tailwind CSS',
-      'JavaScript',
-      'HTML',
-      'CSS',
-      'Git',
-    ],
+    tech: ['React', 'Tailwind CSS', 'JavaScript', 'HTML', 'CSS', 'Git'],
     responsibilities: [
       'Implemented UI modifications based on design specifications',
       'Fixed frontend bugs and interface issues',
@@ -254,9 +229,7 @@ export function Experience() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">
-                      Overview
-                    </h3>
+                    <h3 className="text-lg font-semibold mb-2">Overview</h3>
 
                     <p className="text-gray-400/90 leading-relaxed">
                       {selectedExperience.longDescription}
@@ -271,10 +244,7 @@ export function Experience() {
                     <ul className="space-y-2">
                       {selectedExperience.responsibilities.map(
                         (responsibility, index) => (
-                          <li
-                            key={index}
-                            className="flex items-start gap-2"
-                          >
+                          <li key={index} className="flex items-start gap-2">
                             <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 flex-shrink-0"></div>
 
                             <span className="text-gray-400/90">
