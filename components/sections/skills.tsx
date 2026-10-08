@@ -114,7 +114,7 @@ export const Skills = () => {
             return (
               <div
                 key={category.id}
-                className="rounded-lg border border-gray-500/20 p-6 shadow-[0_0_15px_rgba(0,0,2,0.2)] transition-all duration-300 hover:shadow-[0_0_25px_rgba(16,185,129,0.2)]"
+                className="rounded-lg border border-gray-500/20 p-6 shadow-[0_0_15px_rgba(0,0,2,0.2)]"
               >
                 {/* Category Header */}
                 <div className="mb-6 flex items-center gap-3">
